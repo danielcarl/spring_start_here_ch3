@@ -5,7 +5,6 @@ import com.geekfan.main.Person;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import java.beans.BeanProperty;
 
 @Configuration
 public class ProjectConfig {
@@ -21,6 +20,7 @@ public class ProjectConfig {
     public Person person() {
         Person p = new Person();
         p.setName("Ella");
+        p.setParrot(parrot());
         return p;
     }
 }
