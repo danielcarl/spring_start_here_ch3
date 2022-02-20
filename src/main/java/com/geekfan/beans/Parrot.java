@@ -1,12 +1,11 @@
-package com.geekfan.main;
+package com.geekfan.beans;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Parrot {
 
-    private String name;
-
-    public Parrot() {
-        System.out.println("Parrot created");
-    }
+    private String name = "Koko";
 
     public String getName() {
         return name;

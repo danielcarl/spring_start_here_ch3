@@ -1,5 +1,6 @@
 package com.geekfan.main;
 
+import com.geekfan.beans.Person;
 import com.geekfan.config.ProjectConfig;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
@@ -10,11 +11,7 @@ public class Main {
 
         Person person = context.getBean(Person.class);
 
-        Parrot parrot = context.getBean(Parrot.class);
-
         System.out.println("Person's name : " + person.getName());
-
-        System.out.println("Parrot's name : " + parrot.getName());
 
         System.out.println("Person's parrot : " + person.getParrot());
     }

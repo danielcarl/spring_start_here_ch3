@@ -1,12 +1,14 @@
 package com.geekfan.config;
 
-import com.geekfan.main.Parrot;
-import com.geekfan.main.Person;
+import com.geekfan.beans.Parrot;
+import com.geekfan.beans.Person;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 
 @Configuration
+@ComponentScan(basePackages = "com.geekfan.beans")
 public class ProjectConfig {
 
     @Bean
